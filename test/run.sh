@@ -14,4 +14,4 @@ compile
 
 
 msg "Run SimpleTests on Rust LLVM code"
-/opt/llvm/build/bin/opt -load ../build/SimpleAliasTest/libSimpleAliasTest.so  -simpletester -stats simple_prog.bc > /dev/null
+/opt/llvm/build/bin/opt  -load  ../build/SimpleAliasTest/libSimpleAliasTest.so  -simpletester simple_prog.bc > /dev/null
