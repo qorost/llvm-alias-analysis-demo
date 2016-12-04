@@ -17,5 +17,5 @@ compile
 #/opt/llvm/build/bin/opt  -load  ../build/SimpleAliasTest/libSimpleAliasTest.so  -simpletester simple_prog.bc > /dev/null
 
 
-msg "Run SimpleTests on Rust LLVM code"
+msg "Run SimpleEvaluator on Rust LLVM code"
 /opt/llvm/build/bin/opt  -load  ../build/SimpleEvaluator/libSimpleEvaluator.so  -simpleevaluator simple_prog.bc > /dev/null

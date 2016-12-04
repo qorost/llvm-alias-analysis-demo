@@ -30,19 +30,6 @@ using namespace llvm;
 namespace {
 
 
-const char* aliasAsStr(AliasResult a){
-        switch(a) {
-        case AliasResult::MustAlias:
-                return "MustAlias";
-        case AliasResult::PartialAlias:
-                return "PartialAlias";
-        case AliasResult::MayAlias:
-                return "MayAlias";
-        case AliasResult::NoAlias:
-        default:
-                return "NoAlias";
-        }
-}
 
 
 bool PrintAll = true;
