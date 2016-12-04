@@ -10,6 +10,22 @@ int foo(struct Foo *f) {
     return ppf->x;
 }
 
+
+int *bar() {
+
+    int i = 0;
+    return &i;
+
+}
+
+int* uafdemo() {
+
+    int *i = bar();
+
+    return *i;
+
+}
+
 int main() {
 
     struct Foo f;
@@ -17,5 +33,10 @@ int main() {
     f.y = 2;
 
     foo(&f);
+
+
+    int *tmp = uafdemo();
+
+    printf("demo tmp = %d",*tmp);
 
 }

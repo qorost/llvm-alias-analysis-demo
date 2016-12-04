@@ -75,3 +75,4 @@ endif()
 
 
 add_subdirectory(SimpleAliasTest)
+add_subdirectory(SimpleEvaluator)

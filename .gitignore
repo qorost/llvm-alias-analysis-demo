@@ -1,4 +1,4 @@
 build/*
 *.ll
 *.bc
-
+a.out
